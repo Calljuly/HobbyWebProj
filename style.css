@@ -65,6 +65,23 @@ button:hover{
     padding: 50px;
 }
 
+header{
+    background-color: rgba(31, 26, 56, 0.801);
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px 25px 0 0 ;
+}
+
+header nav a {
+color: #EAD7D1;
+}
+
+header nav a :visited {
+    color: #EAD7D1;
+}
+
 footer{
     background-color: rgba(31, 26, 56, 0.801);
     margin-bottom: 0px;
@@ -83,19 +100,19 @@ footer{
     width: 30%;
     display: inline-block;
     align-content: left;
-    }
-    .content2{
-    width: 30%;
-    display: inline-block;
-    align-content: left;
-    
-    }
-    .content3{
-    width: 30%;
-    display: inline-block;
-    align-content: left;
-    
-    }
+}
+.content2{
+width: 30%;
+display: inline-block;
+align-content: left;
+
+}
+.content3{
+width: 30%;
+display: inline-block;
+align-content: left;
+
+}
 
 /* Vad behöver du */
 nav{

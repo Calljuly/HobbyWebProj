@@ -86,4 +86,11 @@ footer p{
 ul{
     display: table;
     margin: 0 auto;
+    text-align: left;
 }
+
+nav{
+    display: inline-block;
+    margin: 0 5px;
+}
+

@@ -94,7 +94,12 @@ nav{
     margin: 0 5px;
 }
 
-.list-image-container{
-    display: block-inline;
+.list-image{
+    display: flex;
+    align-items: center;
 }
 
+.shopImage{
+    width: 70%;
+    height: auto;
+}

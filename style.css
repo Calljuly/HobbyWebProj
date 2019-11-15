@@ -94,3 +94,7 @@ nav{
     margin: 0 5px;
 }
 
+.list-image-container{
+    display: block-inline;
+}
+

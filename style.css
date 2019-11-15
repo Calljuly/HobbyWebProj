@@ -81,3 +81,9 @@ footer p{
     margin-bottom: 0px;
     padding-bottom: 10px;
 }
+
+/* Vad behöver du */
+ul{
+    display: table;
+    margin: 0 auto;
+}

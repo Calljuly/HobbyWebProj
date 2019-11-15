@@ -83,12 +83,6 @@ footer p{
 }
 
 /* Vad behöver du */
-ul{
-    display: table;
-    margin: 0 auto;
-    text-align: left;
-}
-
 nav{
     display: inline-block;
     margin: 0 5px;
@@ -96,10 +90,19 @@ nav{
 
 .list-image{
     display: flex;
-    align-items: center;
 }
 
 .shopImage{
     width: 70%;
     height: auto;
+}
+.list-image-content1{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.list-image-content2{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
 }

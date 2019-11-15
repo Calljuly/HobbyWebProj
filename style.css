@@ -150,3 +150,15 @@ nav{
         justify-content: center;
     }
 }
+
+/* Att komma igång */
+
+table{
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid rgba(31, 26, 56, 0.8);
+}
+
+tr, th, td{
+    padding: 10px;
+}

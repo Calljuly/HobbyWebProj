@@ -46,6 +46,9 @@ color: #EAD7D1;
 border: none;
 padding: 30px;
 margin: 10px;
+
+-webkit-transition-duration: 0.4s; 
+transition-duration: 0.4s;
 }
 
 button p{

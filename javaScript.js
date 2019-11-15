@@ -4,7 +4,7 @@ function getTimeForLastModified()
 }
 
 function myTimer(){
-    var sec = 0;
+    var sec = 1;
     var min =0;
     var timer = setInterval(function(){
         document.getElementById("content3").innerHTML= min +':'+sec;

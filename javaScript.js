@@ -1,13 +1,13 @@
 function getTimeForLastModified()
 {
-    document.getElementById("footerContent").innerHTML = "Last updated : "+ document.lastModified;
+    document.getElementById("content2").innerHTML = "Last updated : "+ document.lastModified;
 }
 
 function myTimer(){
     var sec = 0;
     var min =0;
     var timer = setInterval(function(){
-        document.getElementById("footerContent").innerHTML= min +':'+sec;
+        document.getElementById("content3").innerHTML= min +':'+sec;
         sec++;
         if(sec== 59)
         {

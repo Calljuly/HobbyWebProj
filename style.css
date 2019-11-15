@@ -64,23 +64,35 @@ button:hover{
 
 footer{
     background-color: rgba(31, 26, 56, 0.801);
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
     margin-bottom: 0px;
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     border-radius: 0 0 25px 25px;
-
-
 }
-
-footer p{
+.container{
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    justify-content: space-around;
     color: #EAD7D1;
-    font-size: 15px;
-    margin-bottom: 0px;
-    padding-bottom: 10px;
-}
+    }
+.content1{
+    width: 30%;
+    display: inline-block;
+    align-content: left;
+    }
+    .content2{
+    width: 30%;
+    display: inline-block;
+    align-content: left;
+    
+    }
+    .content3{
+    width: 30%;
+    display: inline-block;
+    align-content: left;
+    
+    }
 
 /* Vad behöver du */
 nav{

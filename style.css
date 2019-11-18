@@ -81,10 +81,29 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 25px 25px 0 0 ;
+    min-height: 40px;
 }
 
 header nav a {
 color: #EAD7D1;
+font-size: 15px;
+padding: 10px;
+text-decoration: none;
+}
+
+#menu{
+    color: #EAD7D1;
+    padding: 15px;
+    float: left;
+}
+
+.menu-content{
+    text-align: left;
+}
+
+nav{
+    position: relative;
+    left: -40px;
 }
 
 header nav a :visited {
@@ -175,3 +194,4 @@ table{
 tr, th, td{
     padding: 10px;
 }
+

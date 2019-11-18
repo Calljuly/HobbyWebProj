@@ -1,3 +1,14 @@
+$(document).ready(() => {
+    $(".menu-content").hide();
+
+    $("#menu").on('click', () =>{
+        $(".menu-content").fadeIn();
+    })
+    $("header").on('mouseleave', () =>{
+        $(".menu-content").hide();
+    })
+})
+
 function getTimeForLastModified()
 {
     var date = new Date(document.lastModified);

@@ -35,14 +35,14 @@ function myTimer(){
 function changeFont(){
     if(document.body.style.fontFamily === "Arial"){
         document.body.style.fontFamily = "Open Sans Condensed";
-        var buttonText = document.getElementsByClassName("buttontext");
+        var buttonText = document.querySelectorAll("button");
         for(i = 0; i < buttonText.length; i++){
             buttonText[i].style.fontFamily = "Open Sans Condensed";
         }
     }
     else{
         document.body.style.fontFamily = "Arial";
-        var buttonText = document.getElementsByClassName("buttontext");
+        var buttonText = document.querySelectorAll("button");
         for(i = 0; i < buttonText.length; i++){
             buttonText[i].style.fontFamily = "Arial";
         }

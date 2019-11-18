@@ -14,6 +14,7 @@ body{
     position: absolute;
     padding: 10px;
     border-radius: 10px;
+    min-width: initial;
 }
 
  h1{
@@ -24,11 +25,12 @@ p{
     font-size: 20px;
     margin-right: 20px;
     margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .indexImage{
     height: 50%;
     width: 50%;
-
 }
 
 .center{
@@ -47,21 +49,22 @@ p{
 }
 
 button{
-background-color: #7B506F;
-color: #EAD7D1;
-border: none;
-padding: 30px;
-margin: 10px;
-
--webkit-transition-duration: 0.4s; 
-transition-duration: 0.4s;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    background-color: #7B506F;
+    color: #EAD7D1;
+    border: none;
+    padding: 30px;
+    margin: 10px;
+    min-width: 161px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
 }
 
 button p{
     font-size: 15px;
     text-align: center;
     display:table-cell;
-    vertical-align:middle;
     font-family: 'Open Sans Condensed', sans-serif;    
 }
 
@@ -124,6 +127,10 @@ align-content: left;
 nav{
     display: inline-block;
     margin: 0 5px;
+}
+
+li{
+    text-align: left;
 }
 
 .shopImage{

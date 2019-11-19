@@ -91,6 +91,10 @@ padding: 10px;
 text-decoration: none;
 }
 
+header nav a :visited {
+    color: #EAD7D1;
+}
+
 #menu{
     color: #EAD7D1;
     padding: 15px;
@@ -98,7 +102,8 @@ text-decoration: none;
 }
 
 .menu-content{
-    text-align: left;
+    display: flex;
+    justify-content: flex-start;
 }
 
 nav{
@@ -106,9 +111,6 @@ nav{
     left: -40px;
 }
 
-header nav a :visited {
-    color: #EAD7D1;
-}
 
 footer{
     background-color: rgba(31, 26, 56, 0.801);

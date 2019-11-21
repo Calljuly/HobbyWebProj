@@ -1,3 +1,4 @@
+
 $(document).ready(() => {
     $(".menu-content").hide();
 
@@ -33,16 +34,15 @@ function getFormattedDate(date) {
 
 function myTimer(){
     var sec = 1;
-    var min =0;
-    var timer = setInterval(function(){
-        document.getElementById("content3").innerHTML= min +':'+sec;
+    var min = 0;
+    setInterval(function(){
+        document.getElementById("content3").innerHTML=  min +':' + sec;
         sec++;
         if(sec== 59)
         {
             sec = 0;
             min += 1;
         }
-        
     } ,1000);
 }
 

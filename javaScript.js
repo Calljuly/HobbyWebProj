@@ -7,6 +7,9 @@ $(document).ready(() => {
     $("header").on('mouseleave', () =>{
         $(".menu-content").hide();
     })
+
+    myTimer();
+    getTimeForLastModified();
 })
 
 function getTimeForLastModified()

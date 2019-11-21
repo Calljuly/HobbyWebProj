@@ -111,7 +111,6 @@ nav{
     left: -40px;
 }
 
-
 footer{
     background-color: rgba(31, 26, 56, 0.801);
     margin-bottom: 0px;
@@ -158,29 +157,37 @@ li{
     width: 70%;
     height: auto;
 }
-.list-image{
+.duo-flex-container{
     display: flex;
 }
 
-.list-image-content1{
+.duo-flex-container-content1{
     display: flex;
     width: 50%;
+    justify-content: center;
+    
+}
+.duo-flex-container-content2{
+    display: flex;
+    width: 50%;
+}
+
+#flex-end-cont1{
     justify-content: flex-end;
-
 }
-.list-image-content2{
-    display: flex;
-    width: 50%;
+
+#flex-start-cont2{
     justify-content: flex-start;
 }
 
-@media screen and (max-width: 600px) {
-    .list-image-content1{
+@media screen and (max-width: 1000px) {
+    .duo-flex-container-content1{
         display: none;
     }
-    .list-image-content2 {
+    .duo-flex-container-content2 {
         width: 100%;
-        display: flex;
+    }
+    #flex-start-cont2{
         justify-content: center;
     }
 }
@@ -188,8 +195,9 @@ li{
 /* Att komma igång */
 
 table{
+    width: 70%;
+    height: 100%;
     margin: 0 auto;
-    text-align: left;
     border: 1px solid rgba(31, 26, 56, 0.8);
 }
 
@@ -197,3 +205,6 @@ tr, th, td{
     padding: 10px;
 }
 
+figure{
+    margin-top: 0px;
+}

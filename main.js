@@ -9,8 +9,8 @@ $(document).ready(() => {
     })
 
     if(sessionStorage.getItem('start') == null){
-        var startTime = Math.floor(Date.now() / 1000); //Getting starttime in seconds
-        sessionStorage.setItem('start', startTime);
+        var startTime = Math.floor(Date.now() / 1000); //Getting start time in seconds
+        sessionStorage.setItem('start', startTime); //storing startTime in sessionStorage for later use
     }
 
     myTimer();
@@ -37,10 +37,10 @@ function getFormattedDate(date) {
   }
 
 function myTimer(){
-    var nowTime = Math.floor(Date.now() / 1000);
-    var diff = nowTime - sessionStorage.getItem('start');  
-    var sec = (diff % 60);
-    var min = Math.floor(diff / 60);
+    var currentTime = Math.floor(Date.now() / 1000);
+    var diff = currentTime - sessionStorage.getItem('start');  //Calculating diff in seconds between session start time and current time
+    var sec = (diff % 60); //Getting diff in seconds
+    var min = Math.floor(diff / 60);//Getting diff in minutes
     setInterval(function(){
         if(sec < 10){
             document.getElementById("content3").innerHTML=  min +':' + '0'+ sec;

@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
     $(".menu-content").hide();
 
@@ -8,6 +7,11 @@ $(document).ready(() => {
     $("header").on('mouseleave', () =>{
         $(".menu-content").hide();
     })
+
+    if(sessionStorage.getItem('start') == null){
+        var startTime = Math.floor(Date.now() / 1000); //Getting starttime in seconds
+        sessionStorage.setItem('start', startTime);
+    }
 
     myTimer();
     getTimeForLastModified();
@@ -33,12 +37,19 @@ function getFormattedDate(date) {
   }
 
 function myTimer(){
-    var sec = 1;
-    var min = 0;
+    var nowTime = Math.floor(Date.now() / 1000);
+    var diff = nowTime - sessionStorage.getItem('start');  
+    var sec = (diff % 60);
+    var min = Math.floor(diff / 60);
     setInterval(function(){
-        document.getElementById("content3").innerHTML=  min +':' + sec;
+        if(sec < 10){
+            document.getElementById("content3").innerHTML=  min +':' + '0'+ sec;
+        }
+        else{
+            document.getElementById("content3").innerHTML=  min +':' + sec;
+        }
         sec++;
-        if(sec== 59)
+        if(sec== 60)
         {
             sec = 0;
             min += 1;

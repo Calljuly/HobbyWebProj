@@ -1,7 +1,7 @@
 $(document).ready(() => {
     $(".menu-content").hide();
 
-    $("#menu").on('click', () =>{
+    $("#menu").on('mouseenter', () =>{
         $(".menu-content").fadeIn();
     })
     $("header").on('mouseleave', () =>{
@@ -49,7 +49,7 @@ function myTimer(){
             document.getElementById("content3").innerHTML=  min +':' + sec;
         }
         sec++;
-        if(sec== 60)
+        if(sec == 60)
         {
             sec = 0;
             min += 1;

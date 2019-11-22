@@ -181,17 +181,6 @@ li{
     justify-content: flex-start;
 }
 
-@media screen and (max-width: 1000px) {
-    .duo-flex-container-content1{
-        display: none;
-    }
-    .duo-flex-container-content2 {
-        width: 100%;
-    }
-    #flex-start-cont2{
-        justify-content: center;
-    }
-}
 
 /* Att komma igång */
 
@@ -208,4 +197,34 @@ tr, th, td{
 
 figure{
     margin-top: 0px;
+}
+
+#horse-breeds{
+    width: 500px;
+    height: auto;
+}
+
+#img-map-message{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .duo-flex-container-content1{
+        display: none;
+    }
+    .duo-flex-container-content2 {
+        width: 100%;
+    }
+    #flex-start-cont2{
+        justify-content: center;
+    }
+    #horse-breeds{
+        display: none;
+    }
+    #img-map-message{
+        display: block;
+    }
+    #fontshift{
+        display: none;
+    }
 }

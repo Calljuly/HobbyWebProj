@@ -17,6 +17,7 @@ $(document).ready(() => {
     getTimeForLastModified();
 })
 
+//Please note.
 function getTimeForLastModified()
 {
     var date = new Date(document.lastModified);
@@ -24,6 +25,7 @@ function getTimeForLastModified()
     document.getElementById("content2").innerHTML = "Senast uppdaterad: " + dateToPrint;
 }
 
+//Changing the time to desired format of DD/MM/YYYY
 function getFormattedDate(date) {
     var year = date.getFullYear();
   
@@ -36,11 +38,15 @@ function getFormattedDate(date) {
     return day + '/' + month  + '/' + year;
   }
 
+//This timer will estimate the time difference between the sessions start time and current time.
+//It adds the diff to the timer and then the timer ticks on. The total session time is then 
+//displayed on all webpages.
 function myTimer(){
     var currentTime = Math.floor(Date.now() / 1000);
-    var diff = currentTime - sessionStorage.getItem('start');  //Calculating diff in seconds between session start time and current time
-    var sec = (diff % 60); //Getting diff in seconds
-    var min = Math.floor(diff / 60);//Getting diff in minutes
+    var diff = currentTime - sessionStorage.getItem('start'); 
+    var sec = (diff % 60); 
+    var min = Math.floor(diff / 60);
+    
     setInterval(function(){
         if(sec < 10){
             document.getElementById("content3").innerHTML=  min +':' + '0'+ sec;
@@ -57,9 +63,12 @@ function myTimer(){
     } ,1000);
 }
 
+//Changing fontFamily in entire body.
+//'var buttonText' also targets the <button>s text and changes that text in the loop.
 function changeFont(){
     if(document.body.style.fontFamily === "Arial"){
         document.body.style.fontFamily = "Open Sans Condensed";
+        
         var buttonText = document.querySelectorAll("button");
         for(i = 0; i < buttonText.length; i++){
             buttonText[i].style.fontFamily = "Open Sans Condensed";
@@ -67,6 +76,7 @@ function changeFont(){
     }
     else{
         document.body.style.fontFamily = "Arial";
+        
         var buttonText = document.querySelectorAll("button");
         for(i = 0; i < buttonText.length; i++){
             buttonText[i].style.fontFamily = "Arial";

@@ -17,7 +17,8 @@ $(document).ready(() => {
     getTimeForLastModified();
 })
 
-//Please note.
+//This function displays the last modified date on the webpage. 
+//(Please note, this function will not work as expected in Chrome due to a bug. This bug is reported to Google.)
 function getTimeForLastModified()
 {
     var date = new Date(document.lastModified);
@@ -25,7 +26,7 @@ function getTimeForLastModified()
     document.getElementById("content2").innerHTML = "Senast uppdaterad: " + dateToPrint;
 }
 
-//Changing the time to desired format of DD/MM/YYYY
+//This function changes the time to desired format of DD/MM/YYYY
 function getFormattedDate(date) {
     var year = date.getFullYear();
   
@@ -64,7 +65,7 @@ function myTimer(){
 }
 
 //Changing fontFamily in entire body.
-//'var buttonText' also targets the <button>s text and changes that text in the loop.
+//'var buttonText' also targets the all the <button> text and changes that text in the loop.
 function changeFont(){
     if(document.body.style.fontFamily === "Arial"){
         document.body.style.fontFamily = "Open Sans Condensed";

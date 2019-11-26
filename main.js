@@ -68,11 +68,11 @@ function myTimer(){
 //'var buttonText' also targets the all the <button> text and changes that text in the loop.
 function changeFont(){
     if(document.body.style.fontFamily === "Arial"){
-        document.body.style.fontFamily = "Open Sans Condensed";
+        document.body.style.fontFamily = "Raleway";
         
         var buttonText = document.querySelectorAll("button");
         for(i = 0; i < buttonText.length; i++){
-            buttonText[i].style.fontFamily = "Open Sans Condensed";
+            buttonText[i].style.fontFamily = "Raleway";
         }
     }
     else{

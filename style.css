@@ -19,18 +19,7 @@ p{
     padding-right: 20px;
 }
 
-button{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 15px;
-    background-color: #7B506F;
-    color: #EAD7D1;
-    border: none;
-    padding: 30px;
-    margin: 10px;
-    min-width: 161px;
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
-}
+
 
 /* || Header and Navigation bar */
 header{
@@ -72,26 +61,23 @@ header nav a :visited {
     justify-content: flex-start;
 }
 
-#fontshift{
-    position: absolute;
-    margin-top: 0px;
-    padding: 10px;
-    border-radius: 10px;
-    min-width: initial;
-}
 
-.indexImage{
-    height: 50%;
-    width: 50%;
-}
 
-.center{
-    width: 60%;
-    height: 90%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #EAD7D1;
-    border-radius: 25px;
+
+
+/* || Button styles */
+
+button{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    background-color: #7B506F;
+    color: #EAD7D1;
+    border: none;
+    padding: 30px;
+    margin: 10px;
+    min-width: 161px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
 }
 
 .button-group{
@@ -114,6 +100,13 @@ button:hover{
     padding: 35px;
 }
 
+#fontshift-button{
+    position: absolute;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: initial;
+}
 
 
 
@@ -153,16 +146,35 @@ align-content: left;
 
 }
 
-/* Vad behöver du */
+/* || Table styles */
+table{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(31, 26, 56, 0.8);
+}
+
+tr, th, td{
+    padding: 10px;
+}
+
+/* List styles*/
 
 li{
     text-align: left;
 }
 
-.shopImage{
-    width: 70%;
-    height: auto;
+/* || Container styles */
+
+.center{
+    width: 60%;
+    height: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #EAD7D1;
+    border-radius: 25px;
 }
+
 .duo-flex-container{
     display: flex;
 }
@@ -187,21 +199,12 @@ li{
 }
 
 
-/* Att komma igång */
 
-table{
+/* || Image styles */
+
+.shopImage{
     width: 70%;
-    height: 100%;
-    margin: 0 auto;
-    border: 1px solid rgba(31, 26, 56, 0.8);
-}
-
-tr, th, td{
-    padding: 10px;
-}
-
-figure{
-    margin-top: 0px;
+    height: auto;
 }
 
 #horse-breeds{
@@ -209,10 +212,18 @@ figure{
     height: auto;
 }
 
+
+.indexImage{
+    height: 50%;
+    width: 50%;
+}
+
+/* || Elements tied to responsiveness of webpage */
 #img-map-message{
     display: none;
 }
 
+/* || Media querys */
 @media screen and (max-width: 1000px) {
     .duo-flex-container-content1{
         display: none;

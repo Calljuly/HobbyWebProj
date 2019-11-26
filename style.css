@@ -13,7 +13,7 @@ h1{
 }
 
 p{
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 20px;
     margin-left: 20px;
     padding-left: 20px;
@@ -41,7 +41,7 @@ nav{
 
 header nav a {
 color: #EAD7D1;
-font-size: 15px;
+font-size: 20px;
 padding: 10px;
 text-decoration: none;
 }
@@ -62,14 +62,11 @@ header nav a :visited {
 }
 
 
-
-
-
 /* || Button styles */
 
 button{
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #7B506F;
     color: #EAD7D1;
     border: none;
@@ -88,7 +85,7 @@ button{
 
 
 button p{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     display:table-cell;
     font-family: 'Open Sans Condensed', sans-serif;    
@@ -101,13 +98,13 @@ button:hover{
 }
 
 #fontshift-button{
+    font-size: 20px;
     position: absolute;
-    margin-top: 2%;
+    margin-top: 1%;
     padding: 10px;
     border-radius: 10px;
     min-width: initial;
 }
-
 
 
 /* || Footer */
@@ -119,6 +116,7 @@ footer{
 }
 
 .footer{
+    font-size: 20px;
     width: 100%;
     border-radius: 0 0 25px 25px;
     display: flex;
@@ -145,6 +143,7 @@ align-content: left;
 
 }
 
+
 /* || Table styles */
 table{
     width: 70%;
@@ -155,16 +154,18 @@ table{
 
 tr, th, td{
     padding: 10px;
+    font-size: 20px;
 }
 
 /* List styles*/
 
 li{
     text-align: left;
+    font-size: 20px;
 }
 
-/* || Container styles */
 
+/* || Container styles */
 .center{
     width: 60%;
     height: 90%;
@@ -200,10 +201,10 @@ li{
 
 
 /* || Image styles */
-
 .image1{
     width: 70%;
     height: auto;
+    opacity: 0.85;
 }
 
 #horse-breeds{

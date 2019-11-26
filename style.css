@@ -1,4 +1,12 @@
 /* || General styles */
+/* html{
+    height: 100%;
+    background-image: url("horsecontacts.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
 body{
     width: 100%;
     height: 100%;
@@ -13,7 +21,7 @@ h1{
 }
 
 p{
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 20px;
     margin-left: 20px;
     padding-left: 20px;
@@ -41,7 +49,7 @@ nav{
 
 header nav a {
 color: #EAD7D1;
-font-size: 20px;
+font-size: 15px;
 padding: 10px;
 text-decoration: none;
 }
@@ -66,7 +74,7 @@ header nav a :visited {
 
 button{
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #7B506F;
     color: #EAD7D1;
     border: none;
@@ -85,7 +93,7 @@ button{
 
 
 button p{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     display:table-cell;
     font-family: 'Open Sans Condensed', sans-serif;    
@@ -98,7 +106,7 @@ button:hover{
 }
 
 #fontshift-button{
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     margin-top: 1%;
     padding: 10px;
@@ -109,14 +117,14 @@ button:hover{
 
 /* || Footer */
 footer{
+    margin-top: 15px;
     background-color: rgba(31, 26, 56, 0.801);
-    margin-top: 20px;
     padding-top: 10px;
     border-radius: 0 0 25px 25px;
 }
 
 .footer{
-    font-size: 20px;
+    font-size: 15px;
     width: 100%;
     border-radius: 0 0 25px 25px;
     display: flex;
@@ -154,21 +162,21 @@ table{
 
 tr, th, td{
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* List styles*/
 
 li{
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
 /* || Container styles */
 .center{
     width: 60%;
-    height: 90%;
+    height: 100%;
     margin: 0 auto;
     text-align: center;
     background-color: #EAD7D1;

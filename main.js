@@ -23,7 +23,7 @@ function getTimeForLastModified()
 {
     var date = new Date(document.lastModified);
     var dateToPrint = getFormattedDate(date);
-    document.getElementById("content2").innerHTML = "Senast uppdaterad: " + dateToPrint;
+    document.getElementById("footer-last-modified").innerHTML = "Senast uppdaterad: " + dateToPrint;
 }
 
 //This function changes the time to desired format of DD/MM/YYYY
@@ -50,10 +50,10 @@ function myTimer(){
     
     setInterval(function(){
         if(sec < 10){
-            document.getElementById("content3").innerHTML=  min +':' + '0'+ sec;
+            document.getElementById("footer-timer").innerHTML=  min +':' + '0'+ sec;
         }
         else{
-            document.getElementById("content3").innerHTML=  min +':' + sec;
+            document.getElementById("footer-timer").innerHTML=  min +':' + sec;
         }
         sec++;
         if(sec == 60)

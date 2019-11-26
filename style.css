@@ -126,7 +126,7 @@ footer{
     border-radius: 0 0 25px 25px;
 }
 
-.container{
+.footer{
     width: 100%;
     border-radius: 0 0 25px 25px;
     display: flex;
@@ -134,19 +134,19 @@ footer{
     color: #EAD7D1;
 }
 
-.content1{
+.footer-names{
     width: 30%;
     display: inline-block;
     align-content: left;
 }
 
-.content2{
+.footer-last-modified{
 width: 30%;
 display: inline-block;
 align-content: left;
 }
 
-.content3{
+.footer-timer{
 width: 30%;
 display: inline-block;
 align-content: left;

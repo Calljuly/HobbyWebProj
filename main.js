@@ -2,10 +2,10 @@ $(document).ready(() => {
     $(".menu-content").hide();
 
     $("#menu").on('mouseenter', () =>{
-        $(".menu-content").fadeIn();
+        $(".menu-content").slideDown('slow');
     })
     $("header").on('mouseleave', () =>{
-        $(".menu-content").hide();
+        $(".menu-content").slideUp('slow');
     })
 
     if(sessionStorage.getItem('start') == null){

@@ -26,7 +26,6 @@ p{
 header{
     background-color: rgba(31, 26, 56, 0.801);
     margin-bottom: 20px;
-    margin-top: 2%;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 25px 25px 0 0 ;
@@ -103,7 +102,7 @@ button:hover{
 
 #fontshift-button{
     position: absolute;
-    margin-top: 0px;
+    margin-top: 2%;
     padding: 10px;
     border-radius: 10px;
     min-width: initial;
@@ -114,7 +113,6 @@ button:hover{
 /* || Footer */
 footer{
     background-color: rgba(31, 26, 56, 0.801);
-    margin-bottom: 0px;
     margin-top: 20px;
     padding-top: 10px;
     border-radius: 0 0 25px 25px;

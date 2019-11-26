@@ -23,7 +23,7 @@ function getTimeForLastModified()
 {
     var date = new Date(document.lastModified);
     var dateToPrint = getFormattedDate(date);
-    document.getElementById("footer-last-modified").innerHTML = "Senast uppdaterad: " + dateToPrint;
+    document.getElementById("footer-last-modified").innerHTML = "Uppdaterad: " + dateToPrint;
 }
 
 //This function changes the time to desired format of DD/MM/YYYY

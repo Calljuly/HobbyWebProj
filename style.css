@@ -84,7 +84,7 @@ button{
     border: none;
     padding: 30px;
     margin: 10px;
-    min-width: 161px;
+    min-width: 250px;
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
 }
@@ -123,12 +123,13 @@ button:hover{
 footer{
     margin-top: 15px;
     background-color: rgba(31, 26, 56, 0.801);
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     border-radius: 0 0 25px 25px;
 }
 
 .footer{
-    font-size: 20px;
+    font-size: 15px;
     width: 100%;
     border-radius: 0 0 25px 25px;
     display: flex;

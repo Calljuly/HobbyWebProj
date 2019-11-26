@@ -6,7 +6,7 @@ html, body{
 
 html{
     height: 100%;
-    background-image: url("cowboys.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ html{
 
 body{
     min-height: 100%;
-    background-color: rgba(123, 80, 111, 0.774);
+    background-color: rgba(126, 96, 117, 0.699);
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -181,7 +181,7 @@ li{
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    background-color: #EAD7D1;
+    background-color: rgba(234, 215, 209, 0.87);
     border-radius: 25px;
 }
 

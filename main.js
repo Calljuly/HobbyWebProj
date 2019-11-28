@@ -10,13 +10,32 @@ $(document).ready(() => {
 
     if(sessionStorage.getItem('start') == null){
         var startTime = Math.floor(Date.now() / 1000); //Getting start time in seconds
+        var text = ''; //Declared variable to hold the choosen font
         sessionStorage.setItem('start', startTime); //storing startTime in sessionStorage for later use
+        sessionStorage.setItem('typsnitt', text); //storing the font in sessionStorage 
     }
 
+    
+    updateFont();
     myTimer();
     getTimeForLastModified();
-})
 
+})
+//sets choosen font everytime a new page is loaded
+function updateFont(){
+
+    $('body').css('font-family', sessionStorage.getItem('typsnitt'));
+    getAllButtons(sessionStorage.getItem('typsnitt'));
+   
+}
+//Gather all buttons for changing font
+function getAllButtons(fontToBeChangeInto) 
+{
+    var buttonText = document.querySelectorAll("button");
+    for(i = 0; i < buttonText.length; i++){
+        buttonText[i].style.fontFamily = fontToBeChangeInto;
+    }
+}
 //This function displays the last modified date on the webpage. 
 //(Please note, this function will not work as expected in Chrome due to a bug. This bug is reported to Google.)
 function getTimeForLastModified()
@@ -65,23 +84,24 @@ function myTimer(){
 }
 
 //Changing fontFamily in entire body.
-//'var buttonText' also targets the all the <button> text and changes that text in the loop.
+//The function getAllButtons changing the font of all buttons to what we have storde in our
+//sessionStorage 'typsnitt'. Text holds that value.
 function changeFont(){
     if(document.body.style.fontFamily === "Arial"){
+
         document.body.style.fontFamily = "Raleway";
-        
-        var buttonText = document.querySelectorAll("button");
-        for(i = 0; i < buttonText.length; i++){
-            buttonText[i].style.fontFamily = "Raleway";
-        }
+        text = 'Raleway';
+        sessionStorage.setItem('typsnitt', text);
+        getAllButtons(sessionStorage.getItem('typsnitt'));
+       
     }
     else{
+
         document.body.style.fontFamily = "Arial";
-        
-        var buttonText = document.querySelectorAll("button");
-        for(i = 0; i < buttonText.length; i++){
-            buttonText[i].style.fontFamily = "Arial";
-        }
+        text = 'Arial';
+        sessionStorage.setItem('typsnitt', text);
+        getAllButtons(sessionStorage.getItem('typsnitt'));
+
     }
 
 }

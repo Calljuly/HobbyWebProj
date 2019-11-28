@@ -1,0 +1,13 @@
+Våran sida är skapad utifrån vad vi vill att den ska användas till, att ge användaren den 
+informatione den behöver för att komma igång med ridning samt mer information som rör en 
+fortsatt intresse för hästar.
+
+Designen är uppbyggd med en bakgrundsbild som är något transparent och våran content div har en 
+tydlig färg mot bakgrunden för att den ska framhävs när användaren öppnar sidan.
+
+Texten är tydlig och lättläst för att en bredare målgrupp ska kunna använda sig av vår sida. 
+Känner användaren att den ändå inte passar dem så kan man byta till ett annat typsnitt i vänstra
+hörnet på sidan. Typsnittet är kraftigare och blir tydligare att läsa.
+
+
+

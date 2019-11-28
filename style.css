@@ -71,6 +71,7 @@ header nav a :visited {
 .menu-content{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 
@@ -251,5 +252,8 @@ li{
     }
     #fontshift-button{
         display: none;
+    }
+    h1{
+        font-size: 300%;
     }
 }

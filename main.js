@@ -30,28 +30,24 @@ $(document).ready(() => {
 function changeFont(){
     if(document.body.style.fontFamily === "Arial"){
 
-        document.body.style.fontFamily = "Raleway";
-        text = 'Raleway';
-        sessionStorage.setItem('typsnitt', text);
-        getAllButtons(sessionStorage.getItem('typsnitt'));
+        updateFont("Raleway");
+        sessionStorage.setItem("typsnitt", "Raleway");
        
     }
     else{
 
-        document.body.style.fontFamily = "Arial";
-        text = 'Arial';
-        sessionStorage.setItem('typsnitt', text);
-        getAllButtons(sessionStorage.getItem('typsnitt'));
+        updateFont("Arial");
+        sessionStorage.setItem('typsnitt', "Arial");
 
     }
 
 }
 
 //sets choosen font everytime a new page is loaded
-function updateFont(){
+function updateFont(fontToBeChangeInto = sessionStorage.getItem('typsnitt')){
 
-    $('body').css('font-family', sessionStorage.getItem('typsnitt'));
-    getAllButtons(sessionStorage.getItem('typsnitt'));
+    $('body').css('font-family', fontToBeChangeInto);
+    getAllButtons(fontToBeChangeInto);
    
 }
 

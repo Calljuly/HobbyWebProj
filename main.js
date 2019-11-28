@@ -8,9 +8,10 @@ $(document).ready(() => {
         $(".menu-content").slideUp('slow');
     })
 
+    //If it's a new session, saving variables for later use.
     if(sessionStorage.getItem('start') == null){
         var startTime = Math.floor(Date.now() / 1000); //Getting start time in seconds
-        var text = ''; //Declared variable to hold the choosen font
+        var text = 'Raleway'; //Declared variable to hold the choosen font
         sessionStorage.setItem('start', startTime); //storing startTime in sessionStorage for later use
         sessionStorage.setItem('typsnitt', text); //storing the font in sessionStorage 
     }
@@ -35,6 +36,8 @@ function getAllButtons(fontToBeChangeInto)
     for(i = 0; i < buttonText.length; i++){
         buttonText[i].style.fontFamily = fontToBeChangeInto;
     }
+    var fontShiftButton = document.getElementById("fontshift-button-p");
+    fontShiftButton.style.fontFamily = fontToBeChangeInto;
 }
 //This function displays the last modified date on the webpage. 
 //(Please note, this function will not work as expected in Chrome due to a bug. This bug is reported to Google.)

@@ -1,20 +1,20 @@
 $(document).ready(() => {
     $(".menu-content").hide();
 
-    $("#menu").on('mouseenter', () =>{
-        $(".menu-content").slideDown('slow');
+    $("#menu").on("mouseenter", () =>{
+        $(".menu-content").slideDown("slow");
     })
-    $("header").on('mouseleave', () =>{
-        $(".menu-content").slideUp('slow');
+    $("header").on("mouseleave", () =>{
+        $(".menu-content").slideUp("slow");
     })
 
     //If it's a new session, saving variables for later use.
-    if(sessionStorage.getItem('start') == null){
+    if(sessionStorage.getItem("start") == null){
         var startTime = Math.floor(Date.now() / 1000); //Getting start time in seconds
-        var text = 'Raleway'; //Declared variable to hold the choosen font
+        var text = "Raleway"; //Declared variable to hold the choosen font
 
-        sessionStorage.setItem('start', startTime); //storing startTime in sessionStorage for later use
-        sessionStorage.setItem('typsnitt', text); //storing the font in sessionStorage 
+        sessionStorage.setItem("start", startTime); //storing startTime in sessionStorage for later use
+        sessionStorage.setItem("typsnitt", text); //storing the font in sessionStorage 
     }
 
     
@@ -25,8 +25,6 @@ $(document).ready(() => {
 })
 
 //Changing fontFamily in entire body.
-//The function getAllButtons changing the font of all buttons to what we have storde in our
-//sessionStorage 'typsnitt'. Text holds that value.
 function changeFont(){
     if(document.body.style.fontFamily === "Arial"){
 
@@ -37,16 +35,16 @@ function changeFont(){
     else{
 
         updateFont("Arial");
-        sessionStorage.setItem('typsnitt', "Arial");
+        sessionStorage.setItem("typsnitt", "Arial");
 
     }
 
 }
 
-//sets choosen font everytime a new page is loaded
-function updateFont(fontToBeChangeInto = sessionStorage.getItem('typsnitt')){
+//Sets choosen font everytime a new page is loaded
+function updateFont(fontToBeChangeInto = sessionStorage.getItem("typsnitt")){
 
-    $('body').css('font-family', fontToBeChangeInto);
+    $("body").css("font-family", fontToBeChangeInto);
     getAllButtons(fontToBeChangeInto);
    
 }
@@ -63,7 +61,7 @@ function getAllButtons(fontToBeChangeInto)
 }
 
 //This function displays the last modified date on the webpage. 
-//(Please note, this function will not work as expected in Chrome due to a bug. This bug is reported to Google.)
+//(Please note, this function will not work as expected in Chrome due to a bug. In Chrome it will display current date. This bug is reported to Google.)
 function getTimeForLastModified()
 {
     var date = new Date(document.lastModified);
@@ -76,12 +74,12 @@ function getFormattedDate(date) {
     var year = date.getFullYear();
   
     var month = (1 + date.getMonth()).toString();
-    month = month.length > 1 ? month : '0' + month;
+    month = month.length > 1 ? month : "0" + month;
   
     var day = date.getDate().toString();
-    day = day.length > 1 ? day : '0' + day;
+    day = day.length > 1 ? day : "0" + day;
     
-    return day + '/' + month  + '/' + year;
+    return day + "/" + month  + "/" + year;
   }
 
 //This timer will estimate the time difference between the sessions start time and current time.
@@ -89,16 +87,16 @@ function getFormattedDate(date) {
 //displayed on all webpages.
 function myTimer(){
     var currentTime = Math.floor(Date.now() / 1000);
-    var diff = currentTime - sessionStorage.getItem('start'); 
+    var diff = currentTime - sessionStorage.getItem("start"); 
     var sec = (diff % 60); 
     var min = Math.floor(diff / 60);
     
     setInterval(function(){
         if(sec < 10){
-            document.getElementById("footer-timer").innerHTML=  min +':' + '0'+ sec;
+            document.getElementById("footer-timer").innerHTML=  min +":" + "0"+ sec;
         }
         else{
-            document.getElementById("footer-timer").innerHTML=  min +':' + sec;
+            document.getElementById("footer-timer").innerHTML=  min +":" + sec;
         }
         sec++;
         if(sec == 60)

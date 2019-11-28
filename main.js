@@ -12,6 +12,7 @@ $(document).ready(() => {
     if(sessionStorage.getItem('start') == null){
         var startTime = Math.floor(Date.now() / 1000); //Getting start time in seconds
         var text = 'Raleway'; //Declared variable to hold the choosen font
+
         sessionStorage.setItem('start', startTime); //storing startTime in sessionStorage for later use
         sessionStorage.setItem('typsnitt', text); //storing the font in sessionStorage 
     }
@@ -22,6 +23,30 @@ $(document).ready(() => {
     getTimeForLastModified();
 
 })
+
+//Changing fontFamily in entire body.
+//The function getAllButtons changing the font of all buttons to what we have storde in our
+//sessionStorage 'typsnitt'. Text holds that value.
+function changeFont(){
+    if(document.body.style.fontFamily === "Arial"){
+
+        document.body.style.fontFamily = "Raleway";
+        text = 'Raleway';
+        sessionStorage.setItem('typsnitt', text);
+        getAllButtons(sessionStorage.getItem('typsnitt'));
+       
+    }
+    else{
+
+        document.body.style.fontFamily = "Arial";
+        text = 'Arial';
+        sessionStorage.setItem('typsnitt', text);
+        getAllButtons(sessionStorage.getItem('typsnitt'));
+
+    }
+
+}
+
 //sets choosen font everytime a new page is loaded
 function updateFont(){
 
@@ -29,6 +54,7 @@ function updateFont(){
     getAllButtons(sessionStorage.getItem('typsnitt'));
    
 }
+
 //Gather all buttons for changing font
 function getAllButtons(fontToBeChangeInto) 
 {
@@ -39,6 +65,7 @@ function getAllButtons(fontToBeChangeInto)
     var fontShiftButton = document.getElementById("fontshift-button-p");
     fontShiftButton.style.fontFamily = fontToBeChangeInto;
 }
+
 //This function displays the last modified date on the webpage. 
 //(Please note, this function will not work as expected in Chrome due to a bug. This bug is reported to Google.)
 function getTimeForLastModified()
@@ -86,25 +113,3 @@ function myTimer(){
     } ,1000);
 }
 
-//Changing fontFamily in entire body.
-//The function getAllButtons changing the font of all buttons to what we have storde in our
-//sessionStorage 'typsnitt'. Text holds that value.
-function changeFont(){
-    if(document.body.style.fontFamily === "Arial"){
-
-        document.body.style.fontFamily = "Raleway";
-        text = 'Raleway';
-        sessionStorage.setItem('typsnitt', text);
-        getAllButtons(sessionStorage.getItem('typsnitt'));
-       
-    }
-    else{
-
-        document.body.style.fontFamily = "Arial";
-        text = 'Arial';
-        sessionStorage.setItem('typsnitt', text);
-        getAllButtons(sessionStorage.getItem('typsnitt'));
-
-    }
-
-}
